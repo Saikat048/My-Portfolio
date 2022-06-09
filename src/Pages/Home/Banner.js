@@ -14,7 +14,7 @@ const Banner = () => {
                     </Bounce> 
 
                 <p class="py-6 text-xl">I am a front-end web developer. I count myself as a hardworking person. I love to use my creativity and make something new.</p>
-                <a target="_blank" href="#" class="btn btn-primary">My Resume</a> 
+                <a target="_blank" href="https://drive.google.com/file/d/1PKMcJbbtvKf643FIK7ZMxXTmcpaftYTh/view" class="btn btn-primary">My Resume</a> 
             </div>
         </div>
         </div >
