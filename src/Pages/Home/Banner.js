@@ -1,12 +1,16 @@
 import React from 'react';
 import Saikat from "../../images/Saikat.jpg";
 import Bounce from 'react-reveal/Bounce';
+import Roll from 'react-reveal/Roll';
 
 const Banner = () => {
     return (
         <div class="hero min-h-screen bg-base-200 px-20">
             <div class="hero-content flex-col lg:flex-row-reverse">
+            <Roll right>
                 <img className="w-full" src={Saikat} />
+            </Roll>
+                
                 <div>
                     <h3 className='text-3xl'>Hello, My Name is</h3> 
                     <Bounce left>
