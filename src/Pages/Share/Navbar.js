@@ -1,17 +1,18 @@
 import React from 'react';
-import TypeAnimation from 'react-type-animation';
+import ReactTyped from 'react-typed'; 
 
 const Navbar = () => {
     const manu = <>
-        <li><a href='#banner'>Home</a></li>
-        <li><a href='#services'>Services</a></li>
-        <li><a href='#projects'>Projects</a></li>
-        <li><a href='#projects'>Skills</a></li>
-        <li><a href='#about'>About</a></li>
-        <li><a href='#contact'>Contact</a></li>
+        <li><a href='/#banner'>Home</a></li>
+        <li><a href='/#services'>Services</a></li>
+        <li><a href='/#projects'>Projects</a></li>
+        <li><a href='/#skills'>Skills</a></li>
+        <li><a href='/blogs'>Blogs</a></li>
+        <li><a href='/#about'>About</a></li>
+        <li><a href='/#contact'>Contact</a></li>
     </>
     return (
-        <div class="navbar bg-base-100 top-0 sticky px-20 z-10">
+        <div class="navbar bg-base-300 top-0 sticky px-20 z-50 scroll-m-28">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -22,10 +23,24 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className='text-4xl font-bold text-primary'>
-                    <TypeAnimation
+                    {/* <TypeAnimation
                         cursor={false}
                         sequence={['SAIKAT HOSSAIN', 2000, '']} 
                         repeat={Infinity}
+                    /> */} 
+                    <ReactTyped 
+                        loop
+                        typeSpeed={150}
+                        backSpeed={80}
+                        strings={["SAIKAT HOSSAIN", ""]}
+                    smartBackspace
+                    shuffle={false}
+                    backDelay={1}
+                    fadeOut={false}
+                    fadeOutDelay={1000}
+                    loopCount={0}
+                    showCursor
+                    cursorChar="|"
                     />
                 </div>
             </div>
