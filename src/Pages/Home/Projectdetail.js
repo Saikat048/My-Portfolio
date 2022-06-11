@@ -1,20 +1,26 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
-const Projectdetail = () => {
-    const {projectdetail} = useParams();
-    console.log(projectdetail)
+const Projectdetail = ({ image }) => {
+    // const {projectdetail} = useParams();
+    // console.log(projectdetail) 
+
     return (
-        <div class="hero min-h-screen bg-base-200 px-20">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
-          <div>
-            <h1 class="text-5xl font-bold">Box Office News!</h1>
-            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button class="btn btn-primary">Get Started</button>
-          </div>
+        <div className='flex justify-center mt-16'>
+            <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://i.ibb.co/LN2FHxF/img1.png" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">
+                    Shoes!
+                    <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                    <div class="badge badge-outline">Fashion</div>
+                    <div class="badge badge-outline">Products</div>
+                </div>
+            </div>
         </div>
-      </div>
+        </div>
     );
 };
 
