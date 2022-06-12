@@ -11,6 +11,8 @@ const Contact = () => {
                         <h1 class="text-5xl font-bold">Have an project in mind ? </h1>
                         <p class="py-6 text-4xl">Contact me.</p>
                         <p>Name: Md Saikat Hossain</p>
+                        <p>Email: mdsaikathosan048@gmail.com</p>
+                        <p>Phone: +8801871642745</p>
                     </div>
                     <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div class="card-body">
